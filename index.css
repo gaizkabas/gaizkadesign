@@ -81,6 +81,7 @@ html, body {
     justify-content: center;
     align-items: center;
     height: 300vh; 
+    margin-top: 100px
 }
 
 .recuadro {
