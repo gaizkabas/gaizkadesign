@@ -1,3 +1,9 @@
+@media only screen and (max-width: 768px) {
+  /* Ajustes de estilo para dispositivos móviles */
+  body {
+    font-size: 16px; /* Tamaño de fuente ajustado para pantallas pequeñas */
+  }
+
 html, body {
     cursor: url('resources/cursor3@216x.png') 5 5, auto;
     background-color:ghostwhite;
