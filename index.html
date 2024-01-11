@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaizka Basterrechea</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" href="./resources/icon_216x.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="./resources/icon_216x.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="./index.js"></script>
+</head>
+<body>
+    <div class="título_contenedor">
+    <h1 class="título">Gaizka Basterrechea</h1>
+    <p><img id="miAltavoz" src="./resources/pronunciacion@216x.png" alt="" style="height: 20px; width: 20px; padding-left: 20; padding-right: 20;" >
+    <span style="margin-left: 20px; font-style: oblique; color: rgb(95, 95, 95);">Pronunciación</span>
+    </p>
+
+    <audio id="miSonido">
+        <source src="./resources/pronunciation.mp3" type="audio/mp3">
+        Tu navegador no soporta el elemento de audio.
+      </audio>
+    </div>
+
+    <div class="menu">
+        <button id="btnDropdown" class="icono"></button>
+        <ul id="dropdownContent">
+          <li><a href="#"><img src="./resources/inicio@216x.png" alt="" style="width: 10px; height: 10px; padding-top: 1%;"></a></li>
+          <li><a href="#"><img src="./resources/proyectos@216x.png" alt="" style="width: 10px; height: 10px; padding-top: 1%;"></a></li>
+          <li><a href="#"><img src="./resources/contacto@216x.png" alt="" style="width: 10px; height: 10px; padding-top: 1%;"></a></li>
+        </ul>
+      </div>
+      <div class="contenido-central">
+        <div class="recuadro">
+            <div class="texto">
+                <h2>Hola.</h2>
+                <p>Me llamo Gaizka Basterrechea. Nací en 2002 en Bilbao, y actualmente estudio diseño de producto. Algunos de mis intereses son el diseño (en su totalidad y especialmente el diseño de transporte y automoción), y también el arte, la arquitectura, la música, etc. Esta página es mi portfolio web, en el que muestro todo lo que he diseñado hasta ahora, incluyendo esta web y su sonido. Gracias por visitarlo.
+                </p>
+            </div>
+            <img src="./resources/Foto Gaizka.jpg" alt="Descripción de la imagen">
+        </div>
+        <div class="cuadricula">
+          <img src="./resources/mochilanga2.331.jpg" alt="Descripción de la imagen">
+          <img src="./resources/FINAL LIGHT COLLECTION RENDER.335.jpg" alt="Descripción de la imagen">
+          <img src="./resources/salero tocón.32.jpg" alt="Descripción de la imagen">
+          <img src="./resources/setup final render.145.jpg" alt="Descripción de la imagen">
+          <img src="./resources/coche lateral.png" alt="Descripción de la imagen">
+          <img src="./resources/bajo.JPG" alt="Descripción de la imagen">
+
+
+      </div>
+    </div>
+
+    <div id="modalContacto" class="modal">
+      <div class="modal-content">
+          <span class="close" onclick="cerrarModalContacto()">&times;</span>
+          <h2>Formulario de Contacto</h2>
+          <form action="tu_endpoint_de_procesamiento" method="post">
+              <label for="nombre">Nombre:</label>
+              <input type="text" id="nombre" name="nombre" required>
+   
+              <label for="correo">Correo electrónico:</label>
+              <input type="email" id="correo" name="correo" required>
+   
+              <label for="mensaje">Mensaje:</label>
+              <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+              <input type="submit" value="Enviar">
+          </form>
+      </div>
+  </div>
+
+
+<!-- Modal genérico para las fotos -->
+<div class="modal modal-foto" id="modalFoto1">
+  <div class="modal-content">
+      <span class="close" onclick="cerrarModal('modalFoto1')">&times;</span>
+      <h2>eNomad</h2>
+      <p>Concepto de mochila para la marca LITTIUM. Al montar la mochila en la parrilla trasera de la bicicleta, ésta sirve de luz de posición.</p>
+      <img class="modal_cuadricula_fotos" src="./resources/mochila abierta.jpg" alt="Otra Foto 1">
+      <img class="modal_cuadricula_fotos" src="./resources/mochila vista trasera.jpg" alt="Otra Foto 1">
+      <img class="modal_cuadricula_fotos" src="./resources/mochilanga2.331.jpg" alt="Otra Foto 1">
+    </div>
+</div>
+
+<!-- Modal genérico para las fotos -->
+<div class="modal modal-foto" id="modalFoto2">
+  <div class="modal-content">
+      <!-- Contenido adicional para la foto -->
+      <span class="close" onclick="cerrarModal('modalFoto2')">&times;</span>
+      <h2>Lámpara Vittore</h2>
+      <p>Lámpara diseñada tomando como inspiración el cuadro "Joven caballero en un paisaje" de Vittore Carpaccio. La lámpara toma como referencia el contraste entre la armadura del protagonista del cuadro y el entorno que lo rodea, de frondosa vegetación.</p>
+      <!-- Añade aquí más información o contenido adicional -->
+      <img class="modal_cuadricula_fotos" src="./resources/FINAL LIGHT COLLECTION RENDER.335.jpg" alt="Otra Foto 2">
+      <img class="modal_cuadricula_fotos" src="./resources/lampara FINALexp.255.jpg" alt="Otra Foto 2">
+      <img class="modal_cuadricula_fotos" src="./resources/CARPACCIO, Vittore_Joven caballero en un paisaje_82 (1935 (1).3)_FOTOH.jpeg" alt="Otra Foto 2">
+
+  </div>
+</div>
+
+<!-- Modal genérico para las fotos -->
+<div class="modal modal-foto" id="modalFoto3">
+  <div class="modal-content">
+      <!-- Contenido adicional para la foto -->
+      <span class="close" onclick="cerrarModal('modalFoto3')">&times;</span>
+      <h2>Salero Lauwood</h2>
+      <p>Rediseño del salero tradicional vasco tomando como inspiración el lauburu o cuatrisquel vasco. Al abrir la tapa, se completa la forma del lauburu.</p>
+      <!-- Añade aquí más información o contenido adicional -->
+      <img class="modal_cuadricula_fotos" src="./resources/salero tocón.32.jpg" alt="Otra Foto 3">
+      <img class="modal_cuadricula_fotos" src="./resources/Render presentación.53.jpg" alt="Otra Foto 3">
+  </div>
+</div>
+
+<!-- Modal genérico para las fotos -->
+<div class="modal modal-foto" id="modalFoto4">
+  <div class="modal-content">
+      <!-- Contenido adicional para la foto -->
+      <span class="close" onclick="cerrarModal('modalFoto4')">&times;</span>
+      <h2>Trabajo sobre la Talavera Poblana</h2>
+      <p>Proyecto sobre un diseño de Talavera Poblana con un lenguaje de diseño contemporáneizado. Llevé a cabo éste proyecto durante mi estancia en el Pratt Institute. Durante la fase de investigación, tuve la suerte de poder conversar con Lance Wyman (Diseñador gráfico conocido por ser el responsable de la identidad gráfica de las olimpiadas de México del 68).</p>
+      <!-- Añade aquí más información o contenido adicional -->
+      <img class="modal_cuadricula_fotos" src="./resources/setup final render.145.jpg" alt="Otra Foto 4">
+      <img class="modal_cuadricula_fotos" src="./resources/plate.jpg">
+  </div>
+</div>
+
+<!-- Modal genérico para las fotos -->
+<div class="modal modal-foto" id="modalFoto5">
+  <div class="modal-content">
+      <!-- Contenido adicional para la foto -->
+      <span class="close" onclick="cerrarModal('modalFoto5')">&times;</span>
+      <h2>Polestar 1/2 concept</h2>
+      <p>Concepto de diseño automotríz llevado a cabo a lo largo de una semana como reto autopropuesto. Este vehículo sería un automóvil compacto urbano para la marca Polestar.</p>
+      <!-- Añade aquí más información o contenido adicional -->
+      <img class="modal_cuadricula_fotos" src="./resources/coche lateral.png" alt="Otra Foto 5">
+      <img class="modal_cuadricula_fotos" src="./resources/COCHE KEYSHOT.327.png" alt="Otra Foto 5">
+
+  </div>
+</div>
+
+<!-- Modal genérico para las fotos -->
+<div class="modal modal-foto" id="modalFoto6">
+  <div class="modal-content">
+      <!-- Contenido adicional para la foto -->
+      <span class="close" onclick="cerrarModal('modalFoto6')">&times;</span>
+      <h2>Diseño y fabricación de un bajo eléctrico sin trastes</h2>
+      <p>Proyecto llevado a cabo para la asignatura de maquetas y prototipos. El bajo se compró por componentes en bruto (tablones de madera, etc.) y se fabricó enteramente en la universidad mediante fresado y trabajo manual. El circuito también se soldó desde 0.</p>
+      <!-- Añade aquí más información o contenido adicional -->
+      <img class="modal_cuadricula_fotos" src="./resources/bajo.JPG" alt="Otra Foto 6">
+      <img class="modal_cuadricula_fotos" src="./resources/bajo2.JPG" alt="Otra Foto 6">
+      <img class="modal_cuadricula_fotos" src="./resources/bajo3.jpg" alt="Otra Foto 6">
+      <img class="modal_cuadricula_fotos" src="./resources/bajo4.jpg" alt="Otra Foto 6">
+
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/XiZUESBX9-s?si=9pj__pFF_6EdPzkz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+  </div>
+</div>
+
+<!-- ... (código existente) -->
+
+</body>
+</html>
